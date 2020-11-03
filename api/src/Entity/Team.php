@@ -24,29 +24,13 @@ class Team
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Name;
+    private $name;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=Match::class, inversedBy="awayTeam")
-     */
-    private $awayMatches;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=Match::class, inversedBy="homeTeam")
-     */
-    private $homeMatches;
 
     /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="favoriteTeam")
      */
     private $users;
-
-    public function __construct()
-    {
-        $this->homeMatches = new ArrayCollection();
-        $this->awayMatches = new ArrayCollection();
-        $this->users = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -55,36 +39,12 @@ class Team
 
     public function getName(): ?string
     {
-        return $this->Name;
+        return $this->name;
     }
 
     public function setName(string $Name): self
     {
-        $this->Name = $Name;
-
-        return $this;
-    }
-
-    public function getAwayMatches(): ?Match
-    {
-        return $this->awayMatches;
-    }
-
-    public function setAwayMatches(?Match $awayMatches): self
-    {
-        $this->awayMatches = $awayMatches;
-
-        return $this;
-    }
-
-    public function getHomeMatches(): ?Match
-    {
-        return $this->homeMatches;
-    }
-
-    public function setHomeMatches(?Match $homeMatches): self
-    {
-        $this->homeMatches = $homeMatches;
+        $this->name = $Name;
 
         return $this;
     }
