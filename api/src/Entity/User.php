@@ -25,6 +25,11 @@ class User
      */
     private $Name;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Team::class, inversedBy="users")
+     */
+    private $favoriteTeam;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -38,6 +43,18 @@ class User
     public function setName(string $Name): self
     {
         $this->Name = $Name;
+
+        return $this;
+    }
+
+    public function getFavoriteTeam(): ?Team
+    {
+        return $this->favoriteTeam;
+    }
+
+    public function setFavoriteTeam(?Team $favoriteTeam): self
+    {
+        $this->favoriteTeam = $favoriteTeam;
 
         return $this;
     }

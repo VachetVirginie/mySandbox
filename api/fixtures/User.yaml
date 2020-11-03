@@ -1,0 +1,6 @@
+include:
+    - ./Team.yaml
+App\Entity\User:
+    User1:
+        name: 'Toto'
+        favoriteTeam: '@Team15'

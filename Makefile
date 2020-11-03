@@ -1,0 +1,18 @@
+
+start: ## Start project
+	# Running in detached mode.
+	docker-compose up -d --remove-orphans --no-recreate
+	# Start crons.
+	docker-compose exec php crond
+	# Start Mercure subscribers
+	docker-compose exec -d php bin/console ngtv:mercure:subscribe
+
+stop: ## Stop project
+	docker-compose stop
+
+add-fixtures: ## reset bdd and add fixtures
+	docker-compose exec php bin/console hautelook:fixtures:load -n --purge-with-truncate
+
+delcache: ## clear cache
+	docker-compose exec php rm -rf var/cache
+
