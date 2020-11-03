@@ -32,6 +32,23 @@ class Team
      */
     private $users;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Match::class, mappedBy="homeTeam")
+     */
+    private $homeMatches;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Match::class, mappedBy="awayTeam")
+     */
+    private $awayMatches;
+
+
+    public function __construct()
+    {
+        $this->homeMatches = new ArrayCollection();
+        $this->awayMatches = new ArrayCollection();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -74,6 +91,68 @@ class Team
             // set the owning side to null (unless already changed)
             if ($user->getFavoriteTeam() === $this) {
                 $user->setFavoriteTeam(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Match[]
+     */
+    public function getHomeMatches(): Collection
+    {
+        return $this->homeMatches;
+    }
+
+    public function addHomeMatch(Match $homeMatch): self
+    {
+        if (!$this->homeMatches->contains($homeMatch)) {
+            $this->homeMatches[] = $homeMatch;
+            $homeMatch->setHomeTeam($this);
+        }
+
+        return $this;
+    }
+
+    public function removeHomeMatch(Match $homeMatch): self
+    {
+        if ($this->homeMatches->contains($homeMatch)) {
+            $this->homeMatches->removeElement($homeMatch);
+            // set the owning side to null (unless already changed)
+            if ($homeMatch->getHomeTeam() === $this) {
+                $homeMatch->setHomeTeam(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Match[]
+     */
+    public function getAwayMatches(): Collection
+    {
+        return $this->awayMatches;
+    }
+
+    public function addAwayMatch(Match $awayMatch): self
+    {
+        if (!$this->awayMatches->contains($awayMatch)) {
+            $this->awayMatches[] = $awayMatch;
+            $awayMatch->setAwayTeam($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAwayMatch(Match $awayMatch): self
+    {
+        if ($this->awayMatches->contains($awayMatch)) {
+            $this->awayMatches->removeElement($awayMatch);
+            // set the owning side to null (unless already changed)
+            if ($awayMatch->getAwayTeam() === $this) {
+                $awayMatch->setAwayTeam(null);
             }
         }
 

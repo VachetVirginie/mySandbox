@@ -1,0 +1,8 @@
+include:
+    - ./Team.yaml
+App\Entity\Match:
+    Match1:
+        awayTeam: '@Team1'
+        homeTeam: '@Team2'
+        roundId: 1
+        result: '1'

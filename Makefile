@@ -16,3 +16,8 @@ add-fixtures: ## reset bdd and add fixtures
 delcache: ## clear cache
 	docker-compose exec php rm -rf var/cache
 
+db-reset: ## update bdd
+	docker-compose exec php bin/console doctrine:schema:update --force
+
+add-entity:
+	docker-compose exec php bin/console make:entity --api-resource
