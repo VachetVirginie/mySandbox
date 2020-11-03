@@ -1,0 +1,41 @@
+App\Entity\Team:
+    Team1:
+        name: 'Angers'
+    Team2:
+        name: 'Bordeaux'
+    Team3:
+        name: 'Brest'
+    Team4:
+        name: 'Dijon'
+    Team5:
+        name: 'Lens'
+    Team6:
+        name: 'Lille'
+    Team7:
+        name: 'Lorient'
+    Team8:
+        name: 'Lyon'
+    Team9:
+        name: 'Marseille'
+    Team10:
+        name: 'Metz'
+    Team11:
+        name: 'Monaco'
+    Team12:
+        name: 'Montpellier'
+    Team13:
+        name: 'Nantes'
+    Team14:
+        name: 'Nice'
+    Team15:
+        name: 'Nîmes'
+    Team16:
+        name: 'Paris-SG'
+    Team17:
+        name: 'Reims'
+    Team18:
+        name: 'Rennes'
+    Team19:
+        name: 'Saint-Étienne'
+    Team20:
+        name: 'Strasbourg'
