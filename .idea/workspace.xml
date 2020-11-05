@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2e8ae93-d0c6-4a25-8a5d-0ae735f1f125" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/fixtures/Match.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/fixtures/Match.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Greeting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Match.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Match.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Team.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
