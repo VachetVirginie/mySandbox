@@ -26,7 +26,6 @@ class Team
      */
     private $name;
 
-
     /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="favoriteTeam")
      */
@@ -41,7 +40,6 @@ class Team
      * @ORM\OneToMany(targetEntity=Match::class, mappedBy="awayTeam")
      */
     private $awayMatches;
-
 
     public function __construct()
     {

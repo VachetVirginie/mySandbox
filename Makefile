@@ -21,3 +21,6 @@ db-reset: ## update bdd
 
 add-entity:
 	docker-compose exec php bin/console make:entity --api-resource
+
+cs-fix: ## Run php cs fixer and fix errors
+	docker-compose exec php ./vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix
