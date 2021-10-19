@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2e8ae93-d0c6-4a25-8a5d-0ae735f1f125" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/footix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/footix.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/Version20200828181711.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/migrations/Version20200828181711.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Match.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Match.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Team.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/symfony.lock" afterDir="false" />
-    </list>
+    <list default="true" id="c2e8ae93-d0c6-4a25-8a5d-0ae735f1f125" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +161,10 @@
       <path value="$PROJECT_DIR$/api/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/api/vendor/phpstan/phpstan" />
       <path value="$PROJECT_DIR$/api/vendor/rector/rector" />
+      <path value="$PROJECT_DIR$/api/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/api/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/api/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/api/vendor/fakerphp/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jmEQr1NlXD95wv4JOpFVuyuy8w" />
